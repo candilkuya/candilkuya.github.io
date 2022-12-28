@@ -8,6 +8,7 @@
     <meta name="monetag" content="1a3561c28743987c7ee5c20ed9a0da1d"/>
         <link rel="shortcut icon" href="https://candilkuya.github.io/Score808/assets/images/Profile/score808indonesia.png" type="image/x-icon">
 <link as='script' href='https://cdn.statically.io/gh/candilkuya/Score808/main/hitstat.js' rel='preload'/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;700&display=swap');
@@ -158,6 +159,101 @@ body,
     min-width: 100px;
   }
 }
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877F2;
+  color: #ffffff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1DA1F2;
+  color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #E4405F;
+  color: #ffffff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background: #333333;
+  color: #ffffff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background: #CD201F;
+  color: #ffffff;
+}
 
     </style>
   </head>
@@ -169,11 +265,33 @@ body,
     <div class="infos">
       <div class="name">
         <h2>Score 808</h2>
-        <h4>@score808indonesia</h4>
+        <h4>@Score808indonesia</h4>
       </div>
       <p class="text">
         Live Streaming Score808 | FOLLOW TO UPDATE FREE LIVE SPORTS STREAM.
       </p>
+<ul class="wrapper">
+  <li class="icon facebook">
+    <span class="tooltip">Facebook</span>
+    <span><a href="https://www.facebook.com/score808indonesia"><i class="fab fa-facebook"></i></a></span>
+  </li>
+  <li class="icon twitter">
+    <span class="tooltip">Telegram</span>
+   <span><a href="https://www.tiktok.com/@tjikoeja"><i class="fab fa-telegram"></i></a></span>
+  </li>
+  <li class="icon instagram">
+    <span class="tooltip">Schedule</span>
+    <span><a href="https://www.score808.eu.org/p/link-streaming.html" rel="nofollow noopener" target="_blank" title="live streaming"><i class="fas fa-calendar-alt"></i></a></span>
+  </li>
+  <li class="icon github">
+    <span class="tooltip">Group</span>
+    <span><a href="https://www.facebook.com/groups/995607877797541" rel="nofollow noopener" target="_blank" title="live streaming"><i class="fas fa-user-friends"></i></a></span>
+  </li>
+  <li class="icon youtube">
+    <span class="tooltip">Tiktok</span>
+    <span><a href="#"><i class="fas fa-play-circle"></i></a></span>
+  </li>
+</ul>
       <ul class="stats">
         <li>
           <h3>15K</h3>
@@ -181,19 +299,18 @@ body,
         </li>
         <li>
           <h3>82</h3>
-          <h4>Projects</h4>
+          <h4>Server</h4>
         </li>
         <li>
           <h3>1.3M</h3>
           <h4>Followers</h4>
         </li>
       </ul>
+
       <div class="links">
-        <button class="follow"><a href="https://www.facebook.com/score808indonesia" rel="nofollow noopener" target="_blank" title="live streaming">Follow</a></button>
-                <button class="follow"><a href="https://www.score808.eu.org/p/link-streaming.html" rel="nofollow noopener" target="_blank" title="live streaming">
- Schedule</a></button>
-        <button class="view"><a href="https://www.score808.eu.org/p/live-streaming.html" rel="nofollow noopener" target="_blank" title="live streaming">Live Streaming</a></button>
-      <button class="view"><a href="https://www.score808.eu.org/p/live-tv-indonesia.html" rel="nofollow noopener" target="_blank" title="live tv streaming">Live TV</a></button>
+              
+        <button class="view"><a href="https://www.score808.eu.org/p/live-streaming.html" rel="nofollow noopener" target="_blank" title="live streaming"><i class="fas fa-play"></i> Streaming</a></button>
+      <button class="view"><a href="https://www.score808.eu.org/p/live-tv-indonesia.html" rel="nofollow noopener" target="_blank" title="live tv streaming"><i class="fas fa-play"></i> Live TV</a></button>
    <br/><div id="histats_counter"></div>
       </div>
     </div>
